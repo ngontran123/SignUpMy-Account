@@ -1026,7 +1026,6 @@ namespace GSMMASTER.GSM
                         }
                         else if (this.NetWork == "VINAPHONE")
                         {
-                            MessageBox.Show(input);
                             this.Phone = "0" + new Regex(".*(\\d{9}).*").Match(input.Replace(" ", "").Replace("\r\n", "").Replace("\n", "")).Groups[1].ToString();
                             phone_secondary_temp = this.Phone;
                             this.TKC = "";
